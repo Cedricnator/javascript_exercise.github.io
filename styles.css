@@ -1,0 +1,16 @@
+.fighter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.health-bar {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
+  
+.health {
+    height: 100%;
+    background-color: green;
+}
