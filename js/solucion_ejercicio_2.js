@@ -16,9 +16,10 @@ class Character {
 
   // Ataca a otro personaje seleccionado
   attack(target) {
-    document.getElementById( this.name ).innerHTML += `${this.name} deals ${this.damage} DMG to ${target.name} <br>`;
-    console.log(`${this.name} deals ${this.damage} DMG to ${target.name}`);
-    target.health -= this.damage;
+    const damage = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
+    document.getElementById( this.name ).innerHTML += `${this.name} deals ${damage} DMG to ${target.name} <br>`;
+    console.log(`${this.name} deals ${damage} DMG to ${target.name}`);
+    target.health -= damage;
     this.getHealthPercentage();
     this.updateHealthBar();
     target.getHealthPercentage();

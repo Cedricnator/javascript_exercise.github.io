@@ -14,3 +14,8 @@
     height: 100%;
     background-color: green;
 }
+
+textarea {
+    width: 20rem;
+    height: 5rem;
+}
